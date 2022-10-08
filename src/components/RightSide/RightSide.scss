@@ -1,0 +1,43 @@
+.right-side__wrapper{
+    margin: 38px 20px 0 20px;
+    .header{
+        display: flex;
+        justify-content: space-between;
+        &__navbar{
+            ul{
+                padding: 0;
+                display: flex;
+                li{
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    color: #6c757d;
+                    cursor: pointer;
+                }
+
+                .active{
+                    color: #212529;
+                    border-bottom: 3px solid #212529;
+                }
+            }
+        }
+
+        &__logo{
+            img{
+                position: relative;
+                top: -9px;
+                width: 50px;
+            }
+        }
+    }
+    .weather__detail{
+        background-color: #fff;
+        height: 100%;
+        .logo-icon{
+            width: 50px;
+        }
+    }
+
+    .weather__card{
+        height: 193px;
+    }
+}

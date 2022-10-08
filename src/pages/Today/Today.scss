@@ -1,0 +1,20 @@
+.right-side__wrapper{
+    margin: 38px 20px 0 20px;;
+    .weather__detail{
+        background-color: #fff;
+        height: 100%;
+        .logo-icon{
+            width: 50px;
+        }
+    }
+
+    .weather__card{
+        height: 193px;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .right-col{
+        overflow-y: unset !important;
+    }
+}
