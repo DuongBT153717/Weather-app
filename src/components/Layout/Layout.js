@@ -42,8 +42,7 @@ const Layout = () => {
       </Col>
       <Col lg="9" md='12' className="right-col" style={{ height: "100%", overflowY: "scroll", backgroundColor: "rgb(246, 246, 248)" }}>
         <Routes>
-          <Route path="/" element={<Navigate to={"/weather/today"} />} />
-          <Route path="/weather/today" element={<Today weather={weather} />} />
+          <Route path="/" element={<Today weather={weather} />} />
           <Route path="/weather/week" element={<Week loading={loading} weather={weather} />} />
           <Route path="/weather/hour" element={<Hour loading={loading} weather={weather} />} />
         </Routes>

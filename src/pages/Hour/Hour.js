@@ -1,17 +1,10 @@
-import React, { useState } from "react";
-import Header from "../../components/Header/Header";
-import { Line } from "react-chartjs-2";
 import {
-  Chart as ChartJS,
-  Title,
-  Tooltip,
-  LineElement,
-  Legend,
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  Filler,
+  CategoryScale, Chart as ChartJS, Filler, Legend, LinearScale, LineElement, PointElement, Title,
+  Tooltip
 } from "chart.js";
+import React from "react";
+import { Line } from "react-chartjs-2";
+import Header from "../../components/Header/Header";
 import Spinner from "../../components/Spinner/Spinner";
 ChartJS.register(
   Title,

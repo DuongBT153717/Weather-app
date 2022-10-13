@@ -8,7 +8,7 @@ const Header = () => {
           <ul className="gap-3">
             <li>
               <NavLink
-                to="/weather/today"
+                to="/"
                 className={({ isActive }) => (isActive ? "active" : "")}
               >
                 Today
