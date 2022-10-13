@@ -16,7 +16,7 @@ const Layout = () => {
   useEffect(() => {
       setLoading(true)
       axios.get(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${APIKey}`
+        `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${APIKey}`
       ).then(res => {
         setCountry(res.data);
         return [res.data[0].lat,res.data[0].lon]
