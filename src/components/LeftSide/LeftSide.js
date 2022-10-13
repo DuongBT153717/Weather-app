@@ -14,7 +14,7 @@ const LeftSide = ({ weather, setCity, city, setWeather,country,setCountry }) => 
   const handleSubmit = async (e) => {
     e.preventDefault();
     axios.get(
-      `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${APIKey}`
+      `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${APIKey}`
     ).then(res => {
       setCountry(res.data);
       return [res.data[0].lat,res.data[0].lon]
